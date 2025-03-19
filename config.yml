@@ -1,0 +1,50 @@
+# config.yml
+paths:
+  raw_demos: "C:/neurocs/raw_demos"
+  parsed_data: "C:/neurocs/parsed_data/dataset.csv"
+  processed_data: "C:/neurocs/processed_data"
+  model: "C:/neurocs/model.keras"
+  yolo_model: "C:/neurocs/yolov8_cs2.pt"
+  logs: "C:/neurocs/logs"
+
+cv:
+  screen_region: [0, 0, 1920, 1080]
+  yolo_conf: 0.6
+  health_regions:
+    1080p: [1780, 1025, 1900, 1055]
+    720p: [1186, 683, 1266, 703]
+  armor_regions:
+    1080p: [1780, 1060, 1900, 1090]
+    720p: [1186, 706, 1266, 726]
+
+model:
+  input_size: 32
+  batch_size: 128
+  epochs: 100
+  learning_rate: 0.00025
+  dropout: 0.25
+  hidden_units: [1024, 512]
+
+rl:
+  gamma: 0.99
+  epsilon_decay: 0.9995
+  buffer_size: 10000
+  batch_size: 128
+  update_freq: 100
+  episodes: 1000
+
+ocr:
+  tesseract_path: "C:/Program Files/Tesseract-OCR"
+  config: "--oem 3 --psm 6 -c tessedit_char_whitelist=0123456789"
+  augment: True
+
+steam_ids:
+  - "76561199080599486"
+  - "76561199077798899"
+  - "76561199077655702"
+  - "76561199080378044"
+  - "76561199080621789"
+
+resolutions:
+  - [1920, 1080]
+  - [2560, 1440]

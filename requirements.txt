@@ -1,0 +1,9 @@
+joblib==1.4.2
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.6.1
+tensorflow==2.18.0
+demoparser2==0.5.0
+opencv-python==4.8.1.78
+pynput==1.7.6
+mss==9.0.1
